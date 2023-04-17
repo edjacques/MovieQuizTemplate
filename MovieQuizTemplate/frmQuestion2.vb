@@ -4,7 +4,7 @@
             playerScore = playerScore + 1
         End If
 
-        frmHighScore.Show()
+        frmQuestion3.Show()
         frmHighScore.doScore()
 
         Me.Hide()

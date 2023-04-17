@@ -25,6 +25,8 @@ Partial Class frmMain
         Me.btnStart = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnStart
@@ -55,11 +57,30 @@ Partial Class frmMain
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(137, 351)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(176, 20)
+        Me.TextBox1.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(-4, 348)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(135, 25)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Player Name"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnStart)
@@ -73,4 +94,6 @@ Partial Class frmMain
     Friend WithEvents btnStart As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents btnQuit As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label2 As Label
 End Class

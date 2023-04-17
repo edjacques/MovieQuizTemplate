@@ -24,6 +24,7 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnQuit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnStart
@@ -38,17 +39,28 @@ Partial Class frmMain
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(178, 169)
+        Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(321, 31)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(185, 35)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "Movie Quiz"
+        '
+        'btnQuit
+        '
+        Me.btnQuit.Location = New System.Drawing.Point(637, 348)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(75, 23)
+        Me.btnQuit.TabIndex = 2
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnStart)
         Me.Name = "frmMain"
@@ -60,4 +72,5 @@ Partial Class frmMain
 
     Friend WithEvents btnStart As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnQuit As Button
 End Class

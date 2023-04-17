@@ -8,7 +8,7 @@
     End Sub
 
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
-        If (btnAnswer1.Checked) Then
+        If (RadioButton1.Checked) Then
             playerScore = playerScore + 1
         End If
 
@@ -16,5 +16,13 @@
         frmHighScore.doScore()
 
         Me.Hide()
+    End Sub
+
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+
+    End Sub
+
+    Private Sub frmQuestion3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
